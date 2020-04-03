@@ -1,0 +1,7 @@
+Django==3.0.4
+psycopg2==2.8.4
+geos
+gunicorn==19.9.0
+pandas
+requests
+ipython
