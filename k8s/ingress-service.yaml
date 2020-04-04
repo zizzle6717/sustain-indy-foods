@@ -1,0 +1,40 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: ingress-service
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.ingress.kubernetes.io/rewrite-target: /$1
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    nginx.ingress.kubernetes.io/ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "3600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "3600"
+spec:
+  tls:
+    - hosts:
+        - sustainindyfoods.com
+        - www.sustainindyfoods.com
+      secretName: sustain-indy-foods
+  rules:
+    - host: sustainindyfoods.com
+      http:
+        paths:
+        - path: /?(.*)
+          backend:
+            serviceName: client-sustain-cluster-ip-service
+            servicePort: 8000
+        - path: /backend?(.*)
+          backend:
+            serviceName: server-cluster-ip-service
+            servicePort: 8008
+    - host: www.sustainindyfoods.com
+      http:
+        paths:
+        - path: /?(.*)
+          backend:
+            serviceName: client-sustain-cluster-ip-service
+            servicePort: 8000
+        - path: /backend/?(.*)
+          backend:
+            serviceName: server-cluster-ip-service
+            servicePort: 8008

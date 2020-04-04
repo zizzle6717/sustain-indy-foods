@@ -81,7 +81,7 @@ export class NeighborhoodCards extends React.Component {
   fetchSuggestionsForNeighborhood(neighborhood, ref, fetchOffset) {
     this.setState({ loading: true });
     axios
-      .get("/api/places/by_neighborhood", {
+      .get("https://sustainindyfoods.com/backend/api/places/by_neighborhood", {
         params: {
           neighborhood: neighborhood.key,
           offset: fetchOffset

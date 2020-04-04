@@ -76,14 +76,14 @@ WSGI_APPLICATION = 'carebackend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
-        'HOST': os.environ.get("DB_HOST", "localhost"),
-        'PORT': os.environ.get("DB_PORT", 5432),
+        'HOST': os.environ.get("PG_HOST", "localhost"),
+        'PORT': os.environ.get("PG_PORT", 5432),
         'OPTIONS': {
             'options': '-c search_path=django,supportlocal,public'
         },
-        'USER': 'supportlocal',
-        'PASSWORD': 'supp0rtl0cal',
-        'NAME': 'postgres'
+        'USER': os.environ.get("PG_USER", "postgres"),
+        'PASSWORD': os.environ.get("PG_PASSWORD", "postgres"),
+        'NAME': os.environ.get("PG_DATABASE", "main")
     }
 }
 

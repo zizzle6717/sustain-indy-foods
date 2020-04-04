@@ -49,7 +49,7 @@ Hi there from the SustainIndyFoods.com team! We’re a volunteer website trying 
 
 We encourage you to email them a link where they can buy gift cards online. If you don’t have an online gift card service yet, one that we like is Gift Fly (https://giftfly.com), since they don’t charge too much and they will deposit funds directly to your bank account. Otherwise you can ask customers to call you so you can do it over the phone.
 
-We’d also like to post your link on SustainIndyFoods.com so more people can buy from you. Share your link with us here: https://saveourfaves.org/addplace
+We’d also like to post your link on SustainIndyFoods.com so more people can buy from you. Share your link with us here: https://sustainindyfoods.com/addplace
 
 Thank you, and sending you the best during this crazy time.
 
@@ -57,14 +57,14 @@ Cheers,
 The SustainIndyFoods team
     """
         html_email_body = f"""
-        <p>Hi there from the <a href="https://saveourfaves.org/">SustainIndyFoods.com</a> team! We’re a volunteer website trying to support Indianapolis businesses during the COVID-19 crisis. The following people told us via our site that they want to buy gift cards from {place_name}:</p>
+        <p>Hi there from the <a href="https://sustainindyfoods.com/">SustainIndyFoods.com</a> team! We’re a volunteer website trying to support Indianapolis businesses during the COVID-19 crisis. The following people told us via our site that they want to buy gift cards from {place_name}:</p>
 
         <p>
         {html_emails_to_notify_about}</p>
 
         <p>We encourage you to email them a link where they can buy gift cards online. If you don’t have an online gift card service yet, one that we like is <a href="http://www.giftfly.com/">Gift Fly</a>, since they don’t charge too much and they will deposit funds directly to your bank account. Otherwise you can ask customers to call you so you can do it over the phone.</p>
 
-        <p>We’d also like to post your gift card link on SustainIndyFoods.com so more people can buy from you. <a href="https://saveourfaves.org/addplace">Share your link with us here</a>.</p>
+        <p>We’d also like to post your gift card link on SustainIndyFoods.com so more people can buy from you. <a href="https://sustainindyfoods.com/addplace">Share your link with us here</a>.</p>
 
         <p>Thank you, and sending you the best during this crazy time.</p>
 
@@ -77,7 +77,7 @@ The SustainIndyFoods team
         message = EmailMultiAlternatives(
             subject=f"Buying a gift card to support {place_name}",
             body=plain_email_body,
-            from_email="SustainIndyFoods Team <info@saveourfaves.org>",
+            from_email="SustainIndyFoods Team <info@sustainindyfoods.com>",
             to=[to_address],
             bcc=['m@mikeyk.co'],
             connection=connection,

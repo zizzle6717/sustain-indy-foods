@@ -23,7 +23,7 @@ export function AddLinkModal(props) {
     LogEngagementEvent("user-action", "submitted-new-place");
     setCounter(1);
     axios
-      .post("/api/places/submit_gift_card_link", {
+      .post("https://sustainindyfoods.com/backend/api/places/submit_gift_card_link", {
         place_id: props.place.placeID,
         gift_card_url: giftLink
       })

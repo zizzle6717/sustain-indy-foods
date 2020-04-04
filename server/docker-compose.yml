@@ -3,10 +3,10 @@ version: '3.7'
 services:
     backend:
         build:
-            context: ./backend
-            dockerfile: Dockerfile
+            context: .
+            dockerfile: Dockerfile.dev
         # We run a pip install to catch cases where requirements were added but a Docker build hasn't run yet
-        command: bash -c "pip install -r requirements.txt && python manage.py runserver 0.0.0.0:8000"
+        command: bash -c "pip install -r requirements.txt && python manage.py runserver 0.0.0.0:8008"
         working_dir: /usr/local/site/
         volumes:
         - ./backend/:/usr/local/site/

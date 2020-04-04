@@ -33,7 +33,7 @@ export class EmailSubscription extends React.Component {
       return;
     }
     axios
-      .post("/api/places/submit_email", {
+      .post("https://sustainindyfoods.com/backend/api/places/submit_email", {
         email: this.state.email,
         place_id: this.props.place.placeID
       })

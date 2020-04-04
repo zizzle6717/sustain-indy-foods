@@ -67,7 +67,7 @@ The SustainIndyFoods team</p>
         message = EmailMultiAlternatives(
             subject=f"Still want to support {place_name}?",
             body=plain_email_body,
-            from_email="SustainIndyFoods Team <info@saveourfaves.org>",
+            from_email="SustainIndyFoods Team <info@sustainindyfoods.com>",
             to=[to_address],
             connection=connection,
         )

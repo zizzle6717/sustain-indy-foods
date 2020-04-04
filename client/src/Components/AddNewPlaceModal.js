@@ -47,7 +47,7 @@ export function AddNewPlaceModal(props) {
     LogEngagementEvent("user-action", "submitted-new-place");
     setCounter(1);
     axios
-      .post("/api/places/submit_new_place", {
+      .post("https://sustainindyfoods.com/backend/api/places/submit_new_place", {
         place_details: placeDetails,
         email: email,
         gift_card_url: giftLink,

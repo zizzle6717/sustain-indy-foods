@@ -1,0 +1,20 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Certificate
+metadata:
+  name: sustain-indy-foods-tls
+spec:
+  secretName: sustain-indy-foods
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: sustainindyfoods.com
+  dnsNames:
+    - sustainindyfoods.com
+    - www.sustainindyfoods.com
+  acme:
+    config:
+      - http01:
+          ingressClass: nginx
+        domains:
+          - sustainindyfoods.com
+          - www.sustainindyfoods.com

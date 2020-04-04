@@ -52,7 +52,9 @@
     "@storybook/addons": "^5.3.17",
     "@storybook/preset-create-react-app": "^2.0.0",
     "@storybook/react": "^5.3.17",
-    "eslint-plugin-import": "^2.20.1"
+    "babel-node": "0.0.1-security",
+    "eslint-plugin-import": "^2.20.1",
+    "webpack": "4.41.5"
   },
   "proxy": "http://localhost:8000",
   "lint-staged": {

@@ -25,7 +25,7 @@ export class PlaceFilterDisplay extends React.Component {
 
   fetchPlaceInfo = (scrollElementRef, placeKey) => {
     axios
-      .get("/api/places/detail", {
+      .get("https://sustainindyfoods.com/backend/api/places/detail", {
         params: {
           place_id: placeKey
         }

@@ -27,9 +27,11 @@ RUN set -ex \
 # install dependencies
 RUN set -ex && \
     pip install --upgrade pip
-COPY ./requirements.txt /usr/local/site/requirements.txt
+COPY ./backend/requirements.txt /usr/local/site/requirements.txt
 RUN set -ex && \
     pip install -r requirements.txt
 
 # copy project
-COPY . /usr/local/site/
+COPY ./backend /usr/local/site/
+
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8008"]

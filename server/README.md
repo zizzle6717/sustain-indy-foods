@@ -9,7 +9,7 @@ To get this up and running:
 * From the root folder, run `docker-compose up -d`  to bring up `nginx` and `Django`
 * From the `db` folder, run `docker-compose up -d` to bring up `Postgres`
 * You’ll want to edit the `nginx/nginx.conf` file to match the hostname you’re trying to deploy to. To quickly test if this is all working on your local machine, you can add an `/etc/hosts` line to temporarily point your browser to the locally running nginx instance:
-	* eg  `127.0.0.1 saveourfaves.org`
+	* eg  `127.0.0.1 sustainindyfoods.com`
 
 At this point you should have a running Django instance on `localhost:8000`. You should then create at least one `Area` object (for example, in the Indianapolis Area, that represents Central vs North vs East vs South vs West), a few `Neighborhood`  objects inside each `Area`, and then add some `Places` to each `Neighborhood`. Once you’ve done all of that, you can run:
 

@@ -83,7 +83,7 @@ function FAQModal(props) {
       title: "Who built this? And why?",
       body:
         "We’re Kaitlyn & Mike Krieger -- a husband and wife duo in San Francisco. We’re no longer going out because of COVID-19 (San Francisco is under a “shelter in place” ordinance), so we started buying gift cards to help support our favorite cafes and restaurants during this unpredictable time. SustainIndyFoods is our simple way to make it easier for people to help local businesses through this difficult time. We got help and advice from some great friends and local business owners, in particular Phil Levin, Zack Schwab, Kristen Berman, Stefanie Krieger, Melissa Dyrdahl, Laura Buhler, Paul Einbund, and Eddie Hernandez. You can contact us with any questions about the site at " +
-        renderLink("mailto:info@saveourfaves.org", "info@saveourfaves.org") +
+        renderLink("mailto:info@sustainindyfoods.com", "info@sustainindyfoods.com") +
         " and see more about why we decided to start it " +
         renderLink(
           "https://medium.com/@mikekrieger/launching-saveourfaves-lets-support-restaurants-with-gift-cards-c4fb3e1828cf",
@@ -110,7 +110,7 @@ function FAQModal(props) {
         "I'm running a GoFundMe for my staff, and I'd like to list it on your site",
       body:
         "Please drop us a note via email at " +
-        renderLink("mailto:info@saveourfaves.org", "info@saveourfaves.org")
+        renderLink("mailto:info@sustainindyfoods.com", "info@sustainindyfoods.com")
     },
     {
       title: "How can I start offering online gift cards?",
