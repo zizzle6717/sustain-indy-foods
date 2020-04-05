@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Modal } from "antd";
 import axios from "axios";
 import { LogEngagementEvent } from "../Logging";
-import Config from "../Config";
 import useScript from "../lib/useScript";
 import GooglePlacesAutocomplete from "react-google-places-autocomplete";
 // If you want to use the provided css
@@ -19,7 +18,7 @@ export function AddNewPlaceModal(props) {
   const [placeDetails, setPlaceDetails] = useState(null);
   var googleURL =
     "https://maps.googleapis.com/maps/api/js?key=" +
-    Config.GoogleAPIKey +
+    "AIzaSyCLNuufBC6PSot71KVsulAMHEppB4192CI" +
     "&libraries=places";
   const [scriptLoaded] = useScript(googleURL);
 
