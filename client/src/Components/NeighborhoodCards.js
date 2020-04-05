@@ -88,7 +88,7 @@ export class NeighborhoodCards extends React.Component {
         }
       })
       .then(response => {
-        const suggestions = response.data.suggestedPlaces;
+        const suggestions = response.data.suggestedPlaces || [];
         const moreAvailable = response.data.moreAvailable;
         const merged = (this.state.suggestedPlaces || []).concat(suggestions);
         ref.setState((state, props) => {
