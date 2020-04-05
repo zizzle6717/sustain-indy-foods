@@ -22,7 +22,9 @@ RUN set -ex \
        gettext \
        postgresql-client-$PG_VERSION \
     && apt-get install  -y\
-       binutils libproj-dev libgeos++ proj-bin libgdal20 python3-gdal
+       binutils libproj-dev libgeos++ proj-bin libgdal20 python3-gdal \
+    && apt-get install-y \
+       vim
 
 # install dependencies
 RUN set -ex && \
