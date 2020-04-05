@@ -17,5 +17,7 @@ const Neighborhoods = {
   ],
   west: [
     { name: "Speedway", key: "speedway", image: null },
+  ]
 };
+
 export default Neighborhoods;
