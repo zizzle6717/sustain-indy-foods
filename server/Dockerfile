@@ -34,4 +34,8 @@ RUN set -ex && \
 # copy project
 COPY ./backend /usr/local/site/
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8008", "&&", "node", "./server.js"]
+# Node setup
+RUN npm ci --no-optional
+ENV PATH $PATH:/usr/local/site/node_modules/.bin:$PATH
+
+CMD ["forever", "start", "./server.js", "&&", "python", "manage.py", "runserver", "0.0.0.0:8008",]
