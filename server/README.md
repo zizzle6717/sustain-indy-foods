@@ -21,4 +21,4 @@ python scripts/dump_neighborhoods.py Neighborhoods.js
 python scripts/dump_places.py Places.js
 ```
 
-At that point, you can copy the `Neighborhoods.js` and `Places.js` files into the saveourfaves-frontend repository; use them to overwrite the ones in `src/CityData/`. You’ll also want to update `src/CityData/Areas.js` with information about your areas.
+At that point, you can copy the `Neighborhoods.js` and `Places.js` files into the saveourfaves-frontend repository; use them to overwrite the ones in `src/CityData/`. You’ll also want to update `src/CityData/Areas.js` with information about your areas. 
