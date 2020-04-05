@@ -39,4 +39,4 @@ ENV NODE_ENV production
 RUN npm ci --no-optional
 ENV PATH $PATH:/usr/local/site/node_modules/.bin:$PATH
 
-CMD ["./node_modules/.bin/forever", "start", "./server.js", "&&", "python", "manage.py", "runserver", "0.0.0.0:8008"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8008", "&&", "./node_modules/.bin/forever", "start", "./server.js"]
