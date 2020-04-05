@@ -83,7 +83,7 @@ export class NeighborhoodCards extends React.Component {
     axios
       .get("https://sustainindyfoods.com/backend/api/places/by_neighborhood", {
         params: {
-          neighborhood: neighborhood.key,
+          neighborhood: neighborhood && neighborhood.key,
           offset: fetchOffset
         }
       })

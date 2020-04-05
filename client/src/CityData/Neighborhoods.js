@@ -1,6 +1,6 @@
 const Neighborhoods = {
   central: [
-    // { name: "Mission & Bernal", key: "mission_n_bernal", image: null },
+    { name: "Fountain Square", key: "fountain_square", image: null },
     // { name: "Pacific Heights", key: "pacific_heights", image: null },
     // {
     //   name: "North Beach & Chinatown",
