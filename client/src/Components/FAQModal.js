@@ -45,7 +45,7 @@ function FAQModal(props) {
     {
       title: "What is SustainIndyFoods?",
       body:
-        "SustainIndyFoods is a directory of Indianapolis restaurants and coffee shops that offer online gift cards for purchase. It’s our hope that by providing this resource, we’ll be able to mobilize loyal customers to provide much-needed support for their favorite places in town. We also link to staff donation sites, if they are available."
+        "SustainIndyFoods is a directory of Indianapolis restaurants, bars,  and coffee shops that offer online gift cards for purchase. It’s our hope that by providing this resource, we’ll be able to mobilize loyal customers to provide much-needed support for their favorite places in town. We also link to staff donation sites, if they are available."
     },
     {
       title: "Why isn’t my favorite business on your site?",
@@ -58,15 +58,12 @@ function FAQModal(props) {
       title:
         "How else can I support our local businesses beyond purchasing a gift card?",
       body:
-        "Delivery and pickup are great options! Some restaurants that don’t normally offer delivery have started to offer curbside pickup, and others have closed temporarily. Check their website or social media for the latest info, or browse the " + renderLink("https://projects.sfchronicle.com/2020/restaurant-delivery/", "San Francisco Chronicle's list") +
-        " of Indianapolis restaurants offering takeout. <br />" +
+        "Delivery and pickup are great options! Some restaurants that don’t normally offer delivery have started to offer curbside pickup, and others have closed temporarily. Check their website or social media for the latest info. <br />" +
         "Tip generously if you can (even for delivery/pickup), since employees are doing extra work and putting their health at risk. <br />" +
-        "Encourage the government to get involved. Sign this " +
-        renderLink("http://chng.it/jM97Sbf9ct", "San Francisco petition") +
-        " to encourage lawmakers to offer emergency small business loans. Please call your US Representative and your Senators. You can be connected to the capitol switchboard at 202-224-3121. Demand that small businesses are part the federal stimulus plan."
+        "Please call your US Representative and your Senators. You can be connected to the capitol switchboard at 202-224-3121. Demand that small businesses are part the federal stimulus plan."
     },
     {
-      title: "Why is this just for the Indianapolis? Can you do this for my city?",
+      title: "Why is this just for Indianapolis? Can you do this for my city?",
       body:
         "As San Francisco natives, we started this project for our community. Over the past days, people have launched similar tools for their specific cities, or even nationally. Check out " +
         renderLink("https://helpmainstreet.com/", "Help Main Street") +
@@ -82,9 +79,9 @@ function FAQModal(props) {
     {
       title: "Who built this? And why?",
       body:
-        "We’re Kaitlyn & Mike Krieger -- a husband and wife duo in San Francisco. We’re no longer going out because of COVID-19 (San Francisco is under a “shelter in place” ordinance), so we started buying gift cards to help support our favorite cafes and restaurants during this unpredictable time. SustainIndyFoods is our simple way to make it easier for people to help local businesses through this difficult time. We got help and advice from some great friends and local business owners, in particular Phil Levin, Zack Schwab, Kristen Berman, Stefanie Krieger, Melissa Dyrdahl, Laura Buhler, Paul Einbund, and Eddie Hernandez. You can contact us with any questions about the site at " +
-        renderLink("mailto:info@sustainindyfoods.com", "info@sustainindyfoods.com") +
-        " and see more about why we decided to start it " +
+        "I'm Zack, a local native of Indianapolis. I cloned the open sourced code from Kaitlyn & Mike Krieger -- a husband and wife duo in San Francisco. They’re no longer going out because of COVID-19 (San Francisco is under a “shelter in place” ordinance), so they started buying gift cards to help support our favorite cafes and restaurants during this unpredictable time. SustainIndyFoods is a simple way to make it easier for people to help local businesses through this difficult time. They got help and advice from some great friends and local business owners, in particular Phil Levin, Zack Schwab, Kristen Berman, Stefanie Krieger, Melissa Dyrdahl, Laura Buhler, Paul Einbund, and Eddie Hernandez. You can contact them with any questions about the site at " +
+        renderLink("mailto:info@saveourfaves.com", "info@saveourfaves.com") +
+        " and see more about why they decided to start it " +
         renderLink(
           "https://medium.com/@mikekrieger/launching-saveourfaves-lets-support-restaurants-with-gift-cards-c4fb3e1828cf",
           "here"
