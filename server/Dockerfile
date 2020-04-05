@@ -33,6 +33,7 @@ RUN set -ex && \
 
 # copy project
 COPY ./backend /usr/local/site/
+COPY ./server.js /usr/local/site/server.js
 COPY ./package*.json /usr/local/site/
 
 # Node setup
