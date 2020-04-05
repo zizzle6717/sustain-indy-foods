@@ -38,4 +38,4 @@ COPY ./backend /usr/local/site/
 RUN npm ci --no-optional
 ENV PATH $PATH:/usr/local/site/node_modules/.bin:$PATH
 
-CMD ["forever", "start", "./server.js", "&&", "python", "manage.py", "runserver", "0.0.0.0:8008",]
+CMD ["./node_modules/.bin/forever", "start", "./server.js", "&&", "python", "manage.py", "runserver", "0.0.0.0:8008",]
