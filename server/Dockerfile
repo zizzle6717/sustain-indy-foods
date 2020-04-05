@@ -1,5 +1,5 @@
 # pull official base image
-FROM python:3.8.0-slim
+FROM nikolaik/python-nodejs:python3.8-nodejs12
 
 # set work directory
 WORKDIR /usr/local/site/
@@ -34,4 +34,4 @@ RUN set -ex && \
 # copy project
 COPY ./backend /usr/local/site/
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:8008"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8008", "&&", "node", "./server.js"]

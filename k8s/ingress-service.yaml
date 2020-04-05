@@ -27,6 +27,10 @@ spec:
           backend:
             serviceName: server-cluster-ip-service
             servicePort: 8008
+        - path: /django-static/?(.*)
+          backend:
+            serviceName: server-cluster-ip-service
+            servicePort: 8009
     - host: www.sustainindyfoods.com
       http:
         paths:
@@ -38,3 +42,7 @@ spec:
           backend:
             serviceName: server-cluster-ip-service
             servicePort: 8008
+        - path: /django-static/?(.*)
+          backend:
+            serviceName: server-cluster-ip-service
+            servicePort: 8009
