@@ -33,6 +33,7 @@ RUN set -ex && \
 
 # copy project
 COPY ./backend /usr/local/site/
+COPY ./package*.json /usr/local/site/
 
 # Node setup
 RUN npm ci --no-optional
