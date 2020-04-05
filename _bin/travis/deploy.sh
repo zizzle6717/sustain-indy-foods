@@ -18,8 +18,6 @@ fi
 
 [[ "$CURRENT_BRANCH" = "stage" ]] && SUFFIX="-stage" || SUFFIX=""
 
-ls
-
 docker build -t riliadmin/sustain-indy-foods-client$SUFFIX:latest -t riliadmin/sustain-indy-foods-client$SUFFIX:$GIT_SHA -f ./client/Dockerfile --build-arg NODE_VERSION=${NODE_VERSION} ./client
 docker build -t riliadmin/sustain-indy-foods-server$SUFFIX:latest -t riliadmin/sustain-indy-foods-server$SUFFIX:$GIT_SHA -f ./server/Dockerfile --build-arg NODE_VERSION=${NODE_VERSION} ./server
 docker push riliadmin/sustain-indy-foods-client$SUFFIX:latest
