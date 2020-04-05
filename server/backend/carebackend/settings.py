@@ -136,6 +136,13 @@ LOGGING = {
     }
 }
 
+# Changes for kubernetes pathing
+# USE_X_FORWARDED_HOST = True
+FORCE_SCRIPT_NAME = '/backend/'
+SESSION_COOKIE_PATH = '/backend/'
+LOGIN_REDIRECT_URL='/backend/'
+LOGOUT_REDIRECT_URL='/backend/'
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 

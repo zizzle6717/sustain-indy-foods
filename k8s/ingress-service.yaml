@@ -23,7 +23,7 @@ spec:
           backend:
             serviceName: client-sustain-cluster-ip-service
             servicePort: 8000
-        - path: /backend?(.*)
+        - path: /backend/?(.*)
           backend:
             serviceName: server-cluster-ip-service
             servicePort: 8008

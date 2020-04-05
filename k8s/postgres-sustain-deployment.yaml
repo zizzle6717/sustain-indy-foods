@@ -15,10 +15,10 @@ spec:
       volumes:
         - name: postgres-storage
           persistentVolumeClaim:
-            claimName: database-persistent-volume-claim
+            claimName: database-sustain-persistent-volume-claim
       containers:
       - name: postgres
-        image: postgis/postgis
+        image: postgis/postgis:11-3.0
         # resources:
         #   limits:
         #     memory: "256Mi"

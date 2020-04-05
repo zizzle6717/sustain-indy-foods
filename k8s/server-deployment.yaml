@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: server
-        image: riliadmin/sustain-indy-foods-server:abc
+        image: riliadmin/sustain-indy-foods-server:4
         ports:
         - containerPort: 8008
         env:
