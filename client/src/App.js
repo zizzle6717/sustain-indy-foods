@@ -39,7 +39,7 @@ class App extends React.Component {
       faqVisible: false,
       shareVisible: true,
       currentArea: currentArea,
-      addPlaceVisible: path === "addplace"
+      addPlaceVisible: path.includes("addplace")
     };
 
     this.selfRef = React.createRef();
@@ -118,7 +118,7 @@ class App extends React.Component {
                       </Popover>
                       <Button
                         onClick={event => {
-                          window.location.href = "/addplace";
+                          window.location.href = "/#/addplace";
                         }}
                         shape="round"
                         className="header-button header-add-place-button"

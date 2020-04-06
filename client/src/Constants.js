@@ -1,5 +1,5 @@
 const Constants = {
-  AddPlaceURL: "/addplace"
+  AddPlaceURL: "/#/addplace"
 };
 
 export default Constants;

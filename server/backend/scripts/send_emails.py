@@ -49,7 +49,7 @@ Hi there from the SustainIndyFoods.com team! We’re a volunteer website trying 
 
 We encourage you to email them a link where they can buy gift cards online. If you don’t have an online gift card service yet, one that we like is Gift Fly (https://giftfly.com), since they don’t charge too much and they will deposit funds directly to your bank account. Otherwise you can ask customers to call you so you can do it over the phone.
 
-We’d also like to post your link on SustainIndyFoods.com so more people can buy from you. Share your link with us here: https://sustainindyfoods.com/addplace
+We’d also like to post your link on SustainIndyFoods.com so more people can buy from you. Share your link with us here: https://sustainindyfoods.com/#/addplace
 
 Thank you, and sending you the best during this crazy time.
 
@@ -64,7 +64,7 @@ The SustainIndyFoods team
 
         <p>We encourage you to email them a link where they can buy gift cards online. If you don’t have an online gift card service yet, one that we like is <a href="http://www.giftfly.com/">Gift Fly</a>, since they don’t charge too much and they will deposit funds directly to your bank account. Otherwise you can ask customers to call you so you can do it over the phone.</p>
 
-        <p>We’d also like to post your gift card link on SustainIndyFoods.com so more people can buy from you. <a href="https://sustainindyfoods.com/addplace">Share your link with us here</a>.</p>
+        <p>We’d also like to post your gift card link on SustainIndyFoods.com so more people can buy from you. <a href="https://sustainindyfoods.com/#/addplace">Share your link with us here</a>.</p>
 
         <p>Thank you, and sending you the best during this crazy time.</p>
 
