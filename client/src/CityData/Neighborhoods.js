@@ -1,11 +1,11 @@
 const Neighborhoods = {
   central: [
+    { name: "Downtown Indy", key: "downtown_indy", image: null },
     { name: "Fountain Square", key: "fountain_square", image: null },
     { name: "Mass Ave", key: "mass_ave", image: null },
   ],
   north: [
     { name: "Broad Ripple", key: "broad_ripple", image: null },
-    { name: "Carmel", key: "carmel", image: null },
   ],
   east: [
     { name: "Irvington", key: "irvington", image: null },
