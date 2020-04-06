@@ -33,13 +33,14 @@ class App extends React.Component {
     super(props);
     // TODO this is janktown routing
     const path = window.location.pathname.slice(1).toLowerCase();
+    const hash = window.location.hash;
     const currentArea = Areas[path] ? path : "central";
 
     this.state = {
       faqVisible: false,
       shareVisible: true,
       currentArea: currentArea,
-      addPlaceVisible: path.includes("addplace")
+      addPlaceVisible: hash.includes("addplace")
     };
 
     this.selfRef = React.createRef();

@@ -14,9 +14,9 @@ all_json = [p.to_typeahead_json() for p in all_places]
 
 template = """
 
-const SFPlaces = 
+const INDYPlaces = 
 %s;
-export default SFPlaces;
+export default INDYPlaces;
 """ 
 
 with open(fl, 'w') as out:

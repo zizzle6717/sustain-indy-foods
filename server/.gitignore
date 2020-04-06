@@ -147,7 +147,7 @@ django-static
 ingest/
 .DS_Store
 
-private_keys.py
+# private_keys.py
 
 # node
 node_modules
