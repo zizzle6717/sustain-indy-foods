@@ -16,11 +16,12 @@ function AreaDropdown(props) {
         props.updateArea(newArea);
       }}
     >
-      <option value="central">Central</option>
-      <option value="north">North Side</option>
-      <option value="east">East Side</option>
-      <option value="south">South Side</option>
-      <option value="west">West Side</option>
+      <option value="central">Indy - Central</option>
+      <option value="north">Indy - North Side</option>
+      <option value="east">Indy - East Side</option>
+      <option value="south">Indy - South Side</option>
+      <option value="west">Indy - West Side</option>
+      <option value="bloomington">Bloomington</option>
     </select>
   );
 }
