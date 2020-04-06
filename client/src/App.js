@@ -120,6 +120,9 @@ class App extends React.Component {
                       <Button
                         onClick={event => {
                           window.location.href = "/#/addplace";
+                          this.setState({
+                            addPlaceVisible: true,
+                          });
                         }}
                         shape="round"
                         className="header-button header-add-place-button"

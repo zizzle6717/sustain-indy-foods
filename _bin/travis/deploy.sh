@@ -25,5 +25,5 @@ docker push riliadmin/sustain-indy-foods-client$SUFFIX:$GIT_SHA
 docker push riliadmin/sustain-indy-foods-server$SUFFIX:latest
 docker push riliadmin/sustain-indy-foods-server$SUFFIX:$GIT_SHA
 kubectl apply -f k8s
-kubectl set image deployments/server-deployment server=riliadmin/sustain-indy-foods-client:$GIT_SHA
+kubectl set image deployments/client-sustain-deployment server=riliadmin/sustain-indy-foods-client:$GIT_SHA
 kubectl set image deployments/server-deployment server=riliadmin/sustain-indy-foods-server:$GIT_SHA

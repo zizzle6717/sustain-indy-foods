@@ -154,7 +154,7 @@ EMAIL_PORT = 465
 EMAIL_USE_SSL = True
 
 try:
-    from .private_keys import GOOGLE_PLACES_API_KEY
+    from private_keys import GOOGLE_PLACES_API_KEY
     # , EMAIL_HOST_USER, EMAIL_HOST_PASSWORD
 except ImportError as e:
     print("Please supply a private_keys.py file with a GOOGLE_PLACES_API_KEY")
