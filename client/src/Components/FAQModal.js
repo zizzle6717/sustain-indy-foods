@@ -45,12 +45,12 @@ function FAQModal(props) {
     {
       title: "What is SustainIndyFoods?",
       body:
-        "SustainIndyFoods is a directory of Indianapolis restaurants, bars,  and coffee shops that offer online gift cards for purchase. It’s our hope that by providing this resource, we’ll be able to mobilize loyal customers to provide much-needed support for their favorite places in town. We also link to staff donation sites, if they are available."
+        "SustainIndyFoods is a directory of Indiana restaurants, bars, and coffee shops that offer online gift cards for purchase. It’s our hope that by providing this resource, we’ll be able to mobilize loyal customers to provide much-needed support for their favorite places in town. We also link to staff donation sites, if they are available."
     },
     {
       title: "Why isn’t my favorite business on your site?",
       body:
-        "Please help us add your fave Indianapolis food & beverages spots " +
+        "Please help us add your fave Indiana food & beverages spots " +
         addPlaceLink("here") +
         ". We're open to adding more small business categories if this catches on."
     },
@@ -63,7 +63,7 @@ function FAQModal(props) {
         "Please call your US Representative and your Senators. You can be connected to the capitol switchboard at 202-224-3121. Demand that small businesses are part the federal stimulus plan."
     },
     {
-      title: "Why is this just for Indianapolis? Can you do this for my city?",
+      title: "Why is this just for Indiana? Can you do this for my city?",
       body:
         "As San Francisco natives, we started this project for our community. Over the past days, people have launched similar tools for their specific cities, or even nationally. Check out " +
         renderLink("https://helpmainstreet.com/", "Help Main Street") +
@@ -93,7 +93,7 @@ function FAQModal(props) {
     {
       title: "Why isn’t my business showing up in your search results?",
       body:
-        "Please help us add your Indianapolis food/beverage business " +
+        "Please help us add your Indiana food/beverage business " +
         addPlaceLink("here") +
         ". We're open to adding more small business categories if this catches on."
     },

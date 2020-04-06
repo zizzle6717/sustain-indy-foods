@@ -90,7 +90,7 @@ export class PlaceAutosuggestion extends React.Component {
   render() {
     const { value, suggestions } = this.state;
     const inputProps = {
-      placeholder: "‍Search for an Indianapolis area restaurant, bar, coffee shop...",
+      placeholder: "‍Search for an Indiana restaurant, bar, coffee shop...",
       value,
       onChange: this.onChange,
       onFocus: event => {

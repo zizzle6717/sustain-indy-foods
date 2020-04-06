@@ -43,7 +43,7 @@ with mail.get_connection() as connection:
         html_emails_to_notify_about = "<br />".join(['<a href="mailto:%s">%s</a>' % (x, x) for x in emails_to_notify_about])
 
         plain_email_body = f"""
-Hi there from the SustainIndyFoods.com team! We’re a volunteer website trying to support Indianapolis businesses during the COVID-19 crisis. The following people told us via our site that they want to buy gift cards from {place_name}:
+Hi there from the SustainIndyFoods.com team! We’re a volunteer website trying to support Indiana businesses during the COVID-19 crisis. The following people told us via our site that they want to buy gift cards from {place_name}:
 
 {plain_emails_to_notify_about}
 
@@ -57,7 +57,7 @@ Cheers,
 The SustainIndyFoods team
     """
         html_email_body = f"""
-        <p>Hi there from the <a href="https://sustainindyfoods.com/">SustainIndyFoods.com</a> team! We’re a volunteer website trying to support Indianapolis businesses during the COVID-19 crisis. The following people told us via our site that they want to buy gift cards from {place_name}:</p>
+        <p>Hi there from the <a href="https://sustainindyfoods.com/">SustainIndyFoods.com</a> team! We’re a volunteer website trying to support Indiana businesses during the COVID-19 crisis. The following people told us via our site that they want to buy gift cards from {place_name}:</p>
 
         <p>
         {html_emails_to_notify_about}</p>

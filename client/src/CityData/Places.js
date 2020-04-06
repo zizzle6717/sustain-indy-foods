@@ -43,5 +43,15 @@ const INDYPlaces = [{
   "address": "1414 N Main St, Speedway, IN 46224",
   "key": "barbecue-and-bourbon",
   "image_attribution": "Barbecue and Bourbon"
+}, {
+  "name": "EL Azabache Mexican Restaurant",
+  "address": "4200 S East St Suite 11, Indianapolis, IN 46227, USA",
+  "key": "ChIJs1PFq7dba4gRHJCNglK1q1M",
+  "image_attribution": "['<a href=\"https://maps.google.com/maps/contrib/116633821093433127848\">Robin Storbakken</a>']"
+}, {
+  "name": "Don Juan Taqueria",
+  "address": "3915 Madison Ave #6, Indianapolis, IN 46227, USA",
+  "key": "ChIJWUWBvQFba4gRwIll8bEq2LM",
+  "image_attribution": "['<a href=\"https://maps.google.com/maps/contrib/104142644533422008377\">Don Juan Taqueria</a>']"
 }];
 export default INDYPlaces;

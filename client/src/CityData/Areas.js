@@ -1,9 +1,10 @@
 const Areas = {
-  central: "Central",
-  north: "North Side",
-  east: "East Side",
-  south: "South Side",
-  west: "West Side",
+  central: "Indy - Central",
+  north: "Indy - North Side",
+  east: "Indy - East Side",
+  south: "Indy - South Side",
+  west: "Indy - West Side",
+  bloomington: "Bloomington",
 };
 
 export default Areas;
