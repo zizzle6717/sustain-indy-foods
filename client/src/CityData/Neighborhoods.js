@@ -17,6 +17,10 @@ const Neighborhoods = {
     "name": "Broad Ripple",
     "key": "broad_ripple",
     "image": null
+  }, {
+    "name": "Castleton",
+    "key": "castleton",
+    "image": null
   }],
   "east": [{
     "name": "Irvington",
